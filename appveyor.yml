@@ -12,7 +12,7 @@ install:
   - sudo apt -y install podman
 build_script:
   - git clone https://github.com/extra2000/apktool.git ${APPVEYOR_BUILD_FOLDER}/src/apktool
-  - cd ${APPVEYOR_BUILD_FOLDER}/src/src/apktool
+  - cd ${APPVEYOR_BUILD_FOLDER}/src/
   - sudo podman build -t extra2000/ibotpeaches/apktool .
   - cd ${APPVEYOR_BUILD_FOLDER}
 on_success:
